@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:technewz/backend/functions.dart';
-import 'package:technewz/components/appbar.dart';
-import 'package:technewz/components/newsbox.dart';
-import 'package:technewz/components/searchbar.dart';
-import 'package:technewz/utils/colors.dart';
-import 'package:technewz/utils/constants.dart';
+import 'package:technews/backend/functions.dart';
+import 'package:technews/components/appbar.dart';
+import 'package:technews/components/newsbox.dart';
+import 'package:technews/components/searchbar.dart';
+import 'package:technews/utils/colors.dart';
+import 'package:technews/utils/constant.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class _HomeState extends State<Home> {
         appBar: appbar(),
         body: Column(
           children: [
-            SearchBar(),
+            // SearchBar(),
             Expanded(
               child: Container(
                   width: w,
@@ -44,13 +45,13 @@ class _HomeState extends State<Home> {
                               return NewsBox(
                                 url: snapshot.data![index]['url'],
                                 imageurl:
-                                    snapshot.data![index]['urlToImage'] != null
-                                        ? snapshot.data![index]['urlToImage']
-                                        : Constants.imageurl,
+                                snapshot.data![index]['urlToImage'] != null
+                                    ? snapshot.data![index]['urlToImage']
+                                    : Constants.imageurl,
                                 title: snapshot.data![index]['title'],
                                 time: snapshot.data![index]['publishedAt'],
                                 description: snapshot.data![index]
-                                        ['description']
+                                ['description']
                                     .toString(),
                               );
                             });
@@ -61,8 +62,8 @@ class _HomeState extends State<Home> {
                       // By default, show a loading spinner.
                       return Center(
                           child: CircularProgressIndicator(
-                        color: AppColors.primary,
-                      ));
+                            color: AppColors.primary,
+                          ));
                     },
                   )),
             ),

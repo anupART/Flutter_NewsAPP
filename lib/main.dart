@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:technewz/pages/home.dart';
-import 'package:technewz/utils/colors.dart';
+import 'package:technews/pages/home.dart';
+import 'package:technews/utils/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(new MyApp());
 

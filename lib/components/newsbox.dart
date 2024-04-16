@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:technewz/utils/colors.dart';
-import 'package:technewz/utils/text.dart';
+import 'package:technews/utils/colors.dart';
+import 'package:technews/utils/text.dart';
 
 import 'bottomsheet.dart';
 import 'components.dart';
@@ -10,11 +10,11 @@ class NewsBox extends StatelessWidget {
   final String imageurl, title, time, description, url;
   const NewsBox(
       {Key? key,
-      required this.imageurl,
-      required this.title,
-      required this.time,
-      required this.description,
-      required this.url})
+        required this.imageurl,
+        required this.title,
+        required this.time,
+        required this.description,
+        required this.url})
       : super(key: key);
 
   @override

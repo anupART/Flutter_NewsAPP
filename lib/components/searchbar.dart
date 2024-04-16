@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:technewz/backend/functions.dart';
-import 'package:technewz/utils/colors.dart';
+import 'package:technews/backend/functions.dart';
+import 'package:technews/utils/colors.dart';
 
 class SearchBar extends StatefulWidget {
   const SearchBar({Key? key}) : super(key: key);
   static TextEditingController searchcontroller =
-      TextEditingController(text: '');
+  TextEditingController(text: '');
 
   @override
   _SearchBarState createState() => _SearchBarState();
@@ -27,20 +27,20 @@ class _SearchBarState extends State<SearchBar> {
                 borderRadius: BorderRadius.circular(50)),
             child: Center(
                 child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                SizedBox(width: 10),
-                Expanded(
-                    child: TextField(
-                  controller: SearchBar.searchcontroller,
-                  decoration: InputDecoration(
-                      hintText: 'Search a Keyword or a Phrase',
-                      hintStyle: GoogleFonts.lato(),
-                      border: InputBorder.none),
-                ))
-              ],
-            )),
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SizedBox(width: 10),
+                    Expanded(
+                        child: TextField(
+                          controller: SearchBar.searchcontroller,
+                          decoration: InputDecoration(
+                              hintText: 'Search a Keyword or a Phrase',
+                              hintStyle: GoogleFonts.lato(),
+                              border: InputBorder.none),
+                        ))
+                  ],
+                )),
           ),
         ),
         InkWell(

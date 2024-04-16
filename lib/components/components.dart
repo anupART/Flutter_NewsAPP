@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:technewz/utils/text.dart';
+import 'package:technews/utils/text.dart';
 
 import '../utils/colors.dart';
 

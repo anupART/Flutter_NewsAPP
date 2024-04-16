@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:technewz/utils/colors.dart';
-import 'package:technewz/utils/text.dart';
+import 'package:technews/utils/colors.dart';
+import 'package:technews/utils/text.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class appbar extends StatelessWidget implements PreferredSizeWidget {
   appbar({Key? key})
@@ -13,7 +14,7 @@ class appbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       actions: [
-        ],
+      ],
       backgroundColor: AppColors.black,
       elevation: 0,
       title: Container(
@@ -21,8 +22,8 @@ class appbar extends StatelessWidget implements PreferredSizeWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              boldText(text: 'Tech', size: 20, color: AppColors.primary),
-              modifiedText(text: 'Newz', size: 20, color: AppColors.lightwhite)
+              boldText(text: 'Applied', size: 20, color: AppColors.primary),
+              modifiedText(text: 'Science ', size: 20, color: AppColors.lightwhite)
             ],
           )),
       centerTitle: true,

@@ -1,9 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:technewz/components/components.dart';
-import 'package:technewz/utils/text.dart';
+import 'package:technews/components/components.dart';
+import 'package:technews/utils/text.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void showMyBottomSheet(
     BuildContext context, String title, String description, imageurl, url) {
@@ -39,10 +40,10 @@ class MyBottomSheetLayout extends StatelessWidget {
 
   const MyBottomSheetLayout(
       {Key? key,
-      required this.title,
-      required this.description,
-      required this.imageurl,
-      required this.url})
+        required this.title,
+        required this.description,
+        required this.imageurl,
+        required this.url})
       : super(key: key);
   @override
   Widget build(BuildContext context) {

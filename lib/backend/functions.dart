@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:technewz/components/searchbar.dart';
-import 'package:technewz/utils/key.dart';
+import 'package:technews/components/searchbar.dart';
+import 'package:technews/utils/key.dart';
 
 Future<List> fetchnews() async {
   final response = await http.get(
